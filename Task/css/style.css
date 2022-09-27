@@ -1,0 +1,7 @@
+img{
+    margin: 20% 0 0 40%;
+    
+}
+img:hover{
+    transform: rotate(-30deg);
+}

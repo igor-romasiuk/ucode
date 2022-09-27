@@ -1,0 +1,11 @@
+.man{
+  height: 60px;
+  
+}
+.infinity{
+    height: 200px;
+}
+.infinity:hover ~:nth-child(odd).man{
+  border: 1px solid salmon;
+  visibility: hidden;
+}
