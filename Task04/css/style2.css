@@ -1,0 +1,276 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wrapper{
+   min-height: 100%;
+   overflow: hidden;
+
+   display: flex;
+   flex-direction: column;
+   
+}
+.container{
+    max-width: 1180px;
+    margin: 0px auto;
+    
+}
+.content{
+    flex: 1 1 auto;
+}
+.hi{
+    background-color: #445162;
+    padding: 50px 0;
+}
+.hi__row{
+  display: flex;
+  justify-content: space-between;
+}
+.hi__body{
+  color: #fff;
+  padding: 0px 30px 0px 0px;
+}
+.hi__title{
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 60px;
+  margin: 0 0 38px 0;
+}
+.hi__list{
+
+}
+.hi__list li{
+    background: url(../img/icon.png) 0 1px no-repeat;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0px 0px 0px 36px ;
+    margin: 0px 0px 15px 0px;
+}
+.hi__list li:last-child{
+    margin: 0;
+}
+.hi__image{
+
+}
+.title{
+ color: #445162;
+ font-size: 30px;
+ line-height: 36px;
+}
+.what{
+ padding: 50px 0;
+}
+.what__row{
+ display: flex;
+}
+.what__image{
+ flex: 0 0 430px;
+}
+.what__image img{
+    max-width: 100%;
+}
+.what__body{
+ flex: 1 1 auto;
+ padding: 0px 0px 0px 38px;
+}
+.what__title{
+ margin: 0px 0px 33px 0px;
+}
+
+.what__text{
+
+}
+.what__text p{
+    margin: 0px 0px 25px 0px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.columns{
+    background-color: #f5f5f5;
+    padding: 50px 0 20px 0;
+}
+.columns__title{
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.columns__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -8px;
+}
+.columns__column{
+    
+    flex: 0 1 50%;
+    margin: 0 0 30px 0;
+}
+.columns__item{
+    
+   
+    
+}
+.item__row{
+    display: flex;
+    
+}
+.item__image{
+    flex: 0 0 200px;
+}
+.item__body{
+    
+    flex: 1 1 auto;
+    padding: 0 0 0 15px;
+}
+.item__title{
+    color: #445162;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 13px 0;
+}
+.item__text{
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+
+
+.vertical{
+ padding: 50px 0;
+}
+.vertical__title{
+ text-align: center;
+ margin: 0 0 30px 0;
+}
+.vertical__body{
+ max-width: 990px;
+ margin: 0px auto;
+}
+.vertical__row{
+ display: flex;
+ margin: 0px 22.5px;
+}
+.vertical__column{
+ padding: 0px 22.5px;
+ flex: 0 1 33.333%;
+ display: flex;
+}
+.vertical__item{
+ background-color: #445162;
+ color: #fff;
+ border-radius: 5px;
+ border: 1px solid #445162;
+ padding: 0 0 20px 0;
+ display: flex;
+ flex-direction: column;
+}
+.vertical__item a{
+    text-decoration: none;
+    padding: 5px 0;
+    
+    
+}
+.vertical__subtitle{
+ text-align: center;
+ font-size: 24px;
+ text-transform: uppercase;
+ padding: 12px 0;
+}
+.vertical__label{
+ text-align: center;
+ background-color: #fff;
+ color: #445162;
+ padding: 15px 0;
+ font-size: 40px;
+}
+.vertical__text{
+ padding: 20px;
+ font-size: 14px;
+ line-height: 24px;
+ flex: 1 1 auto;
+}
+.vertical__text p{
+    margin: 0 0 15px 0;
+}
+.vertical__text p:last-child{
+    margin: 0;
+}
+.vertical__btn{
+ display: block;
+ margin: 0 20px;
+ height: 40px;
+ background-color: #fff;
+ text-align: center;
+ border-radius: 5px;
+ font-size: 18px;
+}
+.footer{
+  background-color: #f5f5f5;
+}.footer__row{
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text{
+  color: #445162;
+  font-size: 12px;
+  letter-spacing: 0,3px;
+}

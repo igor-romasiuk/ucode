@@ -1,0 +1,48 @@
+
+
+
+
+
+body{
+ list-style: none;
+ 
+ 
+ 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid green;
+    
+}
+
+
+.item1{
+ 
+ 
+}
+.item2{
+
+}
+.item3{
+
+}
+.item4{
+
+}
+
+
+h1{
+    text-align: center;
+}
+input{
+  padding: 5px 100px 5px 0;
+  
+}
+button{
+ padding: 5px 15px;
+}
+.inputext1::placeholder{
+    color: rgb(9, 117, 206);
+}
