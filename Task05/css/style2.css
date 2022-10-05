@@ -1,0 +1,108 @@
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+.box {
+    position: relative;
+    background-image: url(../img/image_2022-10-03_19-29-13.png);
+}
+
+.menu {
+    background-color: grey;
+    padding: 10px 0px 30px 0px;
+    margin: 0;
+}
+.menu2 {
+    display: inline-block;
+    background-color: rgb(230, 213, 138);
+    width: 170px;
+    height: 600px;
+}
+
+
+.container {
+    position: absolute;
+    display: inline-block;
+    
+    width: 550px;
+    height: 280px;
+    margin: 140px 0 0 260px;
+}
+.text {
+    display: inline-block;
+    background-color: white;
+    height: 280px;
+    width: 275px;
+}
+.text1 {
+    font-size: 20px;
+    color:  rgb(59, 93, 145);
+    max-width: 220px;
+    margin: 50px 0 0 30px;
+}
+.text2 {
+    font-size: 14px;
+    color: rgb(59, 93, 145);
+    max-width: 220px;
+    margin: 30px 0 50px 30px;
+}
+.image img {
+    position: absolute;
+    display: inline-block;
+    height: 280px;
+    width: 275px;
+    margin-left: 275px;
+}
+.link {
+    text-decoration: none;
+    background-color: rgb(59, 93, 145);
+    color: white;
+    margin-left:30px;
+    padding: 10px 15px;
+
+}

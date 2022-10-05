@@ -9,41 +9,66 @@
 </head>
 <body>
     <h1>Settings</h1>
-    <div class="box1">
-        <div class="box2">
-         <div class="select">
+   <div class="box1">
+     <div class="menu"></div>
+     <div class="box2">
+        <div class="select">
              <p>Typeface</p>
-             <select name="font" >
-                 <option value="1">Acunim Pro</option>
-                 <option value="2">Comic Sans</option>
-                 <option value="3">Times New Roman</option>
-             </select>
-         </div>
-         <div class="label">
-             <p>Dark YI</p>
+              <select id="standard-select">
+                <option value="Option 1">Acunim Pro</option>
+                <option value="Option 2">Comic Sans</option>
+                <option value="Option 3">Times New Roman</option>
+              </select>
+        </div>
+        <div class="dark">
+             <p>Dark UI</p>
              <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider"></span>
+                <input type="checkbox">
+                 <span class="slider"></span>
              </label>
-         </div>
-         <div class="weight">
+        </div>
+        <br>
+        <div class="weight">
              <p>Weight</p>
-             <input type="checkbox">Bold
-             <input type="checkbox">Regular
-         </div>
-         <div class="color">
+             <label class="container">
+                <input type="checkbox" >Bold
+                <span class="checkmark"></span>
+              </label>
+                <label class="container">
+                    <input type="checkbox" >Regular
+                    <span class="checkmark"></span>
+                </label>
+        </div>
+        <div class="color">
              <p>Color</p>
-             <input type="checkbox" name="blue">
-             <input type="checkbox" name="green">
-             <input type="checkbox" name="purple">
-             <input type="checkbox" name="yellow">
-             <input type="checkbox" name="orange">
-         </div>
-         <div class="size">
+             <label class="container1">
+                <input type="checkbox" >
+                <span class="checkmark1"></span>
+              </label>
+              <label class="container3">
+                <input type="checkbox" >
+                <span class="checkmark3"></span>
+              </label>
+              <label class="container4">
+                <input type="checkbox" >
+                <span class="checkmark4"></span>
+              </label>
+              <label class="container5">
+                <input type="checkbox" >
+                <span class="checkmark5"></span>
+              </label>
+              <label class="container6">
+                <input type="checkbox" >
+                <span class="checkmark6"></span>
+              </label>
+        </div>
+        <div class="size">
              <p>Size</p>
              <input type="range" name="size" min="1" max="100" value="30">
-         </div>
+             <p class="sizemin">A</p>
+             <p class="sizemax">A</p>
         </div>
-    </div>
+     </div>
+   </div>
 </body>
 </html>

@@ -6,102 +6,505 @@
 
 
 
-h1{
-    
+h1 {
+  text-align: center;
 }
-
-.box1{
-    width: 700px;
-    height: 500px;
-    margin: 0 auto;
-    background-color: rgb(61, 76, 88);
-    padding: 40px 80px 0px 10px;
+.box1 {
+  display: flex;
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: rgb(61, 76, 88);
+  padding: 40px 20px 0px 10px;
 }
-.box2{
-    height: 450px;
-    
-    
-    border: 1px solid gainsboro;
-    background-color: rgb(82, 96, 121);
+.menu {
+  margin-top: 90px;
+  width: 90px;
+  height: 230px;
+  background-color: rgb(44, 58, 71);
+  border-radius: 0px 20px 20px 0;
 }
-
-
-
-.select{
-    display: inline-block;
-    margin: 0 0 0 30px;
+.menu {
+  order: calc(2);
 }
-.select select{
-    padding: 5px;
-}
-
-.label{
-    border: 1px solid salmon;
-    display: inline-block;
-}
-.label p{
-    padding: 0px 0 0 50px;
-}
-
-
-.weight{
-    display: inline-block;
-}
-.color{
-    display: inline-block;
-    margin: 0 0 0 100px;
-}
-.size input{
-    
+.box2 {
+  color: white;
+  order: calc(1);
+  height: 450px;
+  border: 1px solid gainsboro;
+  background-color: rgb(82, 96, 121);
 }
 
 
 
+.select {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 0 0 30px;
+}
+.select select {
+  color: aliceblue;
+  background-color: rgb(46, 89, 138);
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 10px;
+}
+select {
+  outline: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+
+.dark {
+  display: inline-block;
+  margin: 0 0 0 120px;  
+}
+.dark p {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0px 80px 0px 0px;
+  padding: 0px 0 0px 10px;
+}
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    margin: 0 0 0 350px;
-  }
-  .switch input {display:none;}
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 15px;
-  }
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: rgb(43, 219, 219);
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 15px;
-  }
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0px 0 0 30px;
+}
+.switch input {
+  display:none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 15px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(43, 219, 219);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 15px;
+}
+input:checked + .slider {
+  background-color: #1893e6;
   
-  input:checked + .slider {
-    background-color: #1893e6;
-    
-  }
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.weight {
+  display: inline-block;
+  margin: 60px 0 0 30px;
+  font-size: 20px;
+}
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(48, 75, 105);
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(48, 190, 190);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.color {
+  display: inline-block;
+  margin: 0px 0px 0px 120px;
+  font-size: 20px;
+}
+.container1 {
+  margin-right: 12px;
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(31, 124, 230);
+  border-radius: 18px;
+}
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+.container1 .checkmark1:after {
+  left: 14px;
+  top: 8px;
+  width: 6px;
+  height: 11px;
+  border: solid rgb(48, 190, 190);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.container2 {
+  margin-right: 12px;
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(76, 128, 33);
+  border-radius: 18px;
+}
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container2 input:checked ~ .checkmark2:after {
+  display: block;
+}
+.container2 .checkmark2:after {
+  left: 14px;
+  top: 8px;
+  width: 6px;
+  height: 11px;
+  border: solid rgb(48, 190, 190);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.container3 {
+  margin-right: 12px;
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container3 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(76, 128, 33);
+  border-radius: 18px;
+}
+.checkmark3:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container3 input:checked ~ .checkmark3:after {
+  display: block;
+}
+.container3 .checkmark3:after {
+  left: 14px;
+  top: 8px;
+  width: 6px;
+  height: 11px;
+  border: solid rgb(48, 190, 190);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.container4 {
+  margin-right: 12px;
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container4 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(73, 71, 212);
+  border-radius: 18px;
+}
+.checkmark4:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container4 input:checked ~ .checkmark4:after {
+  display: block;
+}
+.container4 .checkmark4:after {
+  left: 14px;
+  top: 8px;
+  width: 6px;
+  height: 11px;
+  border: solid rgb(48, 190, 190);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.container5 {
+  margin-right: 12px;
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container5 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(204, 201, 23);
   
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
+  border-radius: 18px;
+}
+.checkmark5:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container5 input:checked ~ .checkmark5:after {
+  display: block;
+}
+.container5 .checkmark5:after {
+  left: 14px;
+  top: 8px;
+  width: 6px;
+  height: 11px;
+  border: solid rgb(48, 190, 190);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.container6 {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container6 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(187, 47, 180);
+  border-radius: 18px;
+}
+.checkmark6:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container6 input:checked ~ .checkmark6:after {
+  display: block;
+}
+.container6 .checkmark2:after {
+  left: 14px;
+  top: 8px;
+  width: 6px;
+  height: 11px;
+  border: solid rgb(48, 190, 190);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.size {
+  display: inline-block;
+  font-size: 20px;
+  margin: 50px 0 0 30px;
+}
+.size input {
+  height: 3px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 150px;
+  background-color: rgb(58, 55, 55);
+}
+.size input::-webkit-slider-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 20px;
+  background: aqua;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.sizemin {
+  color: white;
+  font-size: 20px;
+  width: 15px;
+  margin: 0 0 0 135px;
+}
+.sizemax {
+  color: white;
+  font-size: 14px;
+  width: 15px;
+  margin: -20px 0 25px 0;
+}
+
+
+
+
   
