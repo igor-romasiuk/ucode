@@ -1,0 +1,321 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+.head {
+    background-color: brown;
+    display: flex;
+    color: white;
+    padding: 15px 20px 15px 20px;
+}
+.head a {
+    text-decoration: none;
+    margin: 0px 50px 0 50px;
+    color: white;
+}
+.link1 {
+    padding-left: 180px;
+}
+.link2{
+    padding-right: 150px;
+}
+
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+}
+ul.breadcrumb li+li:before {
+    padding: 7px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: brown;
+    text-decoration: none;
+}
+
+.filtr {
+    border: 1px solid gold;
+    margin: 20px 0 0 22px;
+} 
+
+.filtr p {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.inputcheck {
+    margin-right: 30px;
+    padding: 4px 10px 4px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: #eee;
+    display: inline-block;
+    position: relative;
+    padding-right: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.inputcheck .check-highload {
+    position: absolute;
+    display: none;
+}
+
+.highload2 {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    height: 23px;
+    width: 23px;
+    background-color: #000;
+}
+
+.inputcheck .check-highload:checked ~ .highload2 {
+    background-color: #000;
+}
+
+.highload2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.inputcheck .check-highload:checked ~ .highload2:after {
+    display: block;
+}
+
+.inputcheck .highload2:after {
+    right: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+
+.effect {
+    display: inline-block;
+    border: 1px solid salmon;
+    display: inline-block;
+    margin: 40px 0 0 0px;
+}
+
+.inputcheck1 {
+   
+    color: #000;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.inputcheck1 .check-highload1 {
+    position: absolute;
+    display: none;
+}
+
+.highload1 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 15px;
+    width: 17px;
+    border: 1px solid black;
+    background-color: gainsboro;
+}
+
+.inputcheck1 .check-highload1:checked ~ .highload1 {
+    background-color: black;
+}
+
+.highload1:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.inputcheck1 .check-highload1:checked ~ .highload1:after {
+    display: block;
+}
+
+.inputcheck1 .highload1:after {
+    left: 4px;
+    top: -1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+
+
+.effect input {
+    display: inline-block;
+    margin: 0px 15px 15px 0px;
+}
+
+.peffect {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.prange {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.price {
+    height: 25px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.price:focus {
+    outline: none;
+}
+
+.price::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: #000;
+    border-radius: 1px;
+}
+
+.price::-webkit-slider-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: brown;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+
+
+  
+.content {
+    border:2px solid forestgreen;
+    padding: 0px 22px 220px ;
+    position: relative;
+}
+
+.product {
+    display: flex;
+    border: 1px solid green;
+    margin: 40px 0 0 70px;
+    
+    display: inline-block;
+    position: absolute;
+}
+.container {
+    margin: 0 40px 60px 0;
+    max-width: 380px;
+    border: 1px solid blue;
+    display: inline-block;
+    
+}
+
+
+.product_item {
+    
+}
+
+.item_row {
+   
+    display: flex;
+    
+}
+.item_image {
+    
+
+}
+img {
+    
+    height: 140px;
+    width: 170px;
+}
+.item_body {
+    margin-left: 20px;
+    
+
+}
+.item_title {
+    margin-bottom: 10px;
+}
+.item_text1 {
+    margin-bottom: 10px; 
+    
+}
+.item_text2 {
+    margin-bottom: 10px;
+}
+.item_button {
+    background-color: gainsboro;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
