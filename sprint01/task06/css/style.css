@@ -70,7 +70,6 @@ table {
     display: grid;
     grid-auto-flow: column;
     justify-items: center;
-    
 }
 .header__list li {
     margin-left: 35px;
