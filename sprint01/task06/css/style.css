@@ -23,6 +23,8 @@ html {
 }
 body {
     line-height: 1;
+    height: 100%;
+    max-width: 1600px;
 }
 ol, ul {
     list-style: none;
@@ -73,6 +75,19 @@ table {
 }
 .header__list li {
     margin-left: 35px;
+}
+.header__list input {
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: brown;
+    color: #eee;
+    border-bottom: 1px solid green;
+    width: 80%;
+    min-width: 50px;
+}
+.header__list input::placeholder{
+    color: #eee;
 }
 .header__link {
     text-decoration: none;
@@ -232,7 +247,7 @@ table {
     height: 25px;
     -webkit-appearance: none;
     margin: 10px 0;
-    width: 230px;
+    width: 200px;
 }
 .prange {
     font-size: 18px;
@@ -265,7 +280,7 @@ table {
 }
 .twoprice {
     max-width: fit-content;
-    margin: -18px 0 18px 188px;
+    margin: -18px 0 18px 160px;
 }
 
 @media (min-width:1024px) {
@@ -289,7 +304,7 @@ table {
 .products__items {
     display: grid;
     column-gap: 20px;
-    row-gap: 60px;
+    row-gap: 30px;
     grid-template: 1fr 1fr / 2fr 2fr;
 }
 .products__item {
