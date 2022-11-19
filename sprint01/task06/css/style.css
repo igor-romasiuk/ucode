@@ -49,8 +49,8 @@ table {
     min-height: 100%;
     display: grid;
     grid-template: minmax(55px, auto) 1fr minmax(80px, auto) /1fr;
-    
 }
+
 .header {
     grid-area: "header";
     padding: 10px;
@@ -59,23 +59,28 @@ table {
     grid-template: 1fr / 1fr minmax(auto,300px) minmax(auto, 1100px) 1fr;
     align-items: center;
 }
+
 .header__logo {
     font-size: 20px;
     text-decoration: none;
     color: wheat;
     grid-column: 2 / 3;
 }
+
 .header__menu {
     grid-column: 3 / 4;
 }
+
 .header__list {
     display: grid;
     grid-auto-flow: column;
     justify-items: center;
 }
+
 .header__list li {
     margin-left: 35px;
 }
+
 .header__list input {
     text-align: center;
     border: none;
@@ -86,9 +91,11 @@ table {
     width: 80%;
     min-width: 50px;
 }
+
 .header__list input::placeholder{
     color: #eee;
 }
+
 .header__link {
     text-decoration: none;
     color: wheat;
@@ -100,31 +107,37 @@ table {
     list-style: none;
     background-color: #eee;
 }
+
 .breadcrumb li {
     display: inline;
     font-size: 16px;
 }
+
 .breadcrumb li+li:before {
     padding: 7px;
     color: black;
     content: "/";
 }
+
 .breadcrumb li a {
     color: brown;
     text-decoration: none;
 }
 
 
+
 .filtr {
     margin: 1% 0 0 2%;
     max-width: fit-content;
     display: inline-block;
-} 
+}
+
 .filtr h2 {
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 15px;
 }
+
 .inputcheck {
     margin-right: 30px;
     padding: 4px 10px 4px 20px;
@@ -141,10 +154,12 @@ table {
     -ms-user-select: none;
     user-select: none;
 }
+
 .inputcheck .check-highload {
     position: absolute;
     display: none;
 }
+
 .highload2 {
     position: absolute;
     top: 2px;
@@ -153,17 +168,21 @@ table {
     width: 23px;
     background-color: #000;
 }
+
 .inputcheck .check-highload:checked ~ .highload2 {
     background-color: #000;
 }
+
 .highload2:after {
     content: "";
     position: absolute;
     display: none;
 }
+
 .inputcheck .check-highload:checked ~ .highload2:after {
     display: block;
 }
+
 .inputcheck .highload2:after {
     right: 6px;
     top: 2px;
@@ -178,9 +197,11 @@ table {
 .main {
     padding: 30px 20px;
 }
+
 .sidebar {
     padding:10px 5px;
 }
+
 .sidebar__menu {
     display: inline-block;
 }
@@ -242,17 +263,18 @@ table {
 }
 
 
-
 .price {
     height: 25px;
     -webkit-appearance: none;
     margin: 10px 0;
     width: 200px;
 }
+
 .prange {
     font-size: 18px;
     margin: 10px 0;
 }
+
 .price:focus {
     outline: none;
 }
@@ -278,6 +300,7 @@ table {
 .zeroprice {
     max-width: fit-content;
 }
+
 .twoprice {
     max-width: fit-content;
     margin: -18px 0 18px 160px;
@@ -299,20 +322,19 @@ table {
 }
 
 
-
-
 .products__items {
     display: grid;
     column-gap: 20px;
     row-gap: 30px;
     grid-template: 1fr 1fr / 2fr 2fr;
 }
+
 .products__item {
     position: relative;
     display: grid;
     margin-left: 10px;
-    
 }
+
 @media (max-width:768px) {
     .products__item {
         grid-column: span 2;
@@ -337,6 +359,7 @@ table {
     padding-bottom: 50%;
     margin-bottom: 30px;
 }
+
 .products__image img {
     position: absolute;
     top: 0;
@@ -346,6 +369,7 @@ table {
     object-fit: cover;
     border-radius: 40px;
 }
+
 .products__name {
     display: block;
     text-decoration: none;
@@ -353,14 +377,15 @@ table {
     color: #000;
     line-height: 30px;
     margin-bottom: 10px;
-    
 }
+
 .price {
     display: block;
     color: #000;
     text-decoration: none;
     font-weight: bold;
 }
+
 @media (max-width:1024px) {
     .pricebox {
         position: absolute;
@@ -374,14 +399,15 @@ table {
     text-decoration: none;
     margin-bottom: 15px;
     color: #000;
-
 }
+
 .notavailable {
     display: block;
     text-decoration: none;
     margin-bottom: 15px;
     color: red;
 }
+
 .products__button {
     color: #fff;
     text-transform: uppercase;
@@ -392,6 +418,7 @@ table {
     background-color: brown;
     padding: 8px 50px;
 }
+
 .products__button_no {
     color: #fff;
     text-transform: uppercase;
@@ -401,6 +428,5 @@ table {
     justify-self: start;
     background-color: gray;
     padding: 8px 50px;
-
 }
 
