@@ -1,0 +1,36 @@
+
+
+.wrapper {
+    margin: 50px 0 0 50px;
+}
+.content {
+    
+    display: inline-block;
+}
+
+.content__circle {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(25, 98, 10);
+    border-radius: 60%;
+    position: relative;
+    left: 0;
+    animation: white-circle 5s linear infinite alternate 0s forwards;
+}
+.content__circle:hover  {
+    transition: 2s;
+    background-color: red;
+}
+
+
+@keyframes white-circle {
+    0%{
+        left: 0; 
+    }
+    50%{
+        
+    }
+    100%{
+        left: 700px;
+    }
+}
