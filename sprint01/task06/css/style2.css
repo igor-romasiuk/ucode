@@ -56,7 +56,8 @@ table {
 
 .header {
     grid-area: "header";
-    padding: 10px;
+    max-height: 40px;
+    padding: 8px;
     background-color: brown;
     display: grid;
     grid-template: 1fr / 1fr minmax(auto,270px) minmax(auto, 1100px) 1fr;
@@ -104,9 +105,12 @@ table {
     color: wheat;
 }
 
-
+.bredcrumb {
+    height: max-content;
+    margin-top: -11px;
+}
 ul.breadcrumb {
-    padding: 10px 16px;
+    padding: 11px 16px 11px 16px;
     list-style: none;
     background-color: #eee;
 }
@@ -129,7 +133,7 @@ ul.breadcrumb li a {
 
 
 .content {
-    padding: 0 30px;
+    padding: 0 30px 0px 30px;
 }
 
 h2 {
@@ -269,7 +273,6 @@ img {
         grid-template: 1fr / 2fr;
     }
     .info {
-        border: 1px solid firebrick;
         text-align: center;
     }
     .image {
