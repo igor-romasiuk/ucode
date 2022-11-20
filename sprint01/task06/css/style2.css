@@ -57,7 +57,7 @@ table {
 .header {
     grid-area: "header";
     max-height: 40px;
-    padding: 8px;
+    padding: 10px;
     background-color: brown;
     display: grid;
     grid-template: 1fr / 1fr minmax(auto,270px) minmax(auto, 1100px) 1fr;
@@ -105,9 +105,10 @@ table {
     color: wheat;
 }
 
+
 .bredcrumb {
     height: max-content;
-    margin-top: -11px;
+    margin-top: -5px;
 }
 ul.breadcrumb {
     padding: 11px 16px 11px 16px;
