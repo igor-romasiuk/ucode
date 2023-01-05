@@ -13,7 +13,6 @@ if (!sexRegex.test(sex)) {
     alert('Error')
     throw new Error("Something went badly wrong!");
 }
-console.log(sex)
 const age = prompt('How old is the superhero?', '17')
 if (!ageRegex.test(age)) {
     alert('Error')
