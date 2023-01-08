@@ -1,6 +1,6 @@
 const animalRegex = /^[a-zA-Z]{1,20}$/
 const sexRegex = /^(male|female)?$/i
-const ageRegex = /^[1-9]+$/
+const ageRegex = /^[^0][0-9]{1,5}$/
 
 const animal = prompt('What animal is the superhero most similar to?', 'bat')
 if (!animalRegex.test(animal)) {
