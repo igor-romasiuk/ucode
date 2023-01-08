@@ -1,33 +1,63 @@
-let idiom = +prompt('What kind of Number?','1'), str = '';
+let idiom = +prompt('What kind of Number?','1')
 
-switch (idiom) {
-    default: idiom = prompt('What kind of Number?') 
+switch (idiom) { 
     case 1:
-        str = 'Back to square 1';
+        alert('Back to square 1');
         break;
     case 2:
-        str = 'Goody 2-shoes';
+        alert('Goody 2-shoes');
         break;
     case 3:
     case 6:    
-        str = 'Two\'s company, three\'s a crowd';
+        alert('Two\'s company, three\'s a crowd');
         break; 
     case 4:
     case 9:    
-        str = 'Counting sheep';
+        alert('Counting sheep');
         break;     
     case 5:
-        str = 'Take ﬁve';
+        alert('Take ﬁve');
         break; 
     case 7:
-        str = 'Seventh heaven';
+        alert('Seventh heaven');
         break;     
     case 8:
-        str = 'Behind the eight-ball';
+        alert('Behind the eight-ball');
         break;    
     case 10:
-        str = 'Cheaper by the dozen';  
+        alert('Cheaper by the dozen');  
         break;
-        
+    default:
+        num = +prompt('What kind of Number?');    
 }
-alert(str);
+
+switch (num) { 
+    case 1:
+        alert('Back to square 1');
+        break;
+    case 2:
+        alert('Goody 2-shoes');
+        break;
+    case 3:
+    case 6:    
+        alert('Two\'s company, three\'s a crowd');
+        break; 
+    case 4:
+    case 9:    
+        alert('Counting sheep');
+        break;     
+    case 5:
+        alert('Take ﬁve');
+        break; 
+    case 7:
+        alert('Seventh heaven');
+        break;     
+    case 8:
+        alert('Behind the eight-ball');
+        break;    
+    case 10:
+        alert('Cheaper by the dozen');  
+        break;
+    default:
+        alert('Your number wrong');  
+}
