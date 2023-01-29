@@ -1,8 +1,9 @@
-"use strict"
+'use strict';
 
-let num = +prompt('What kind of Number?','1')
+let num = +prompt('What kind of Number?','1');
 
 switch (num) { 
+/* eslint-disable indent */
     case 1:
         alert('Back to square 1');
         break;
@@ -30,8 +31,7 @@ switch (num) {
         alert('Cheaper by the dozen');  
         break;
     default:
-        let numTwo = +prompt('What kind of Number?');    
-        switch (numTwo) { 
+        switch (+prompt('What kind of Number?')) { 
             case 1:
                 alert('Back to square 1');
                 break;
