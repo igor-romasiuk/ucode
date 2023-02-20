@@ -32,7 +32,6 @@ function getFormattedDate (currentDate) {
     const dayName = days[currentDate.getDay()]
     return`${date}.${month}.${year} ${hours}:${minute} ${dayName}`
 }
-getFormattedDate(currentDate)
 console.log(getFormattedDate(currentDate))
 
 
