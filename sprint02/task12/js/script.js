@@ -3,22 +3,20 @@
 
 
 function concat(str1, str2) {
-	let count = 0;
+
 	function innerConcat(str2) {
-		count++;
-		if (str2 === undefined) {
-			str2 = prompt('Enter the second string:','Hulk alone!');
-		}
+		innerConcat.count++;
+		if (!str2) str2 = prompt('Enter the second string:','Hulk alone!');
 		return str1 + ' ' + str2;
 	}
-
-	if (str2 === undefined) {
+	innerConcat.count = 0;
+	if (!str2) { 
 		return innerConcat;
-	} else {
+	}else {
 		return innerConcat(str2);
 	}
 }
-  
+
 
 
 
@@ -31,5 +29,11 @@ console.log(output);
 console.log(phrase2.count);
 output = phrase2();
 console.log(output);
-
-
+output = phrase2();
+console.log(output);
+console.log(phrase2.count);
+let phrase3 = concat('Go');
+output = phrase3();
+console.log(output);
+console.log(phrase3.count);
+console.log(phrase2.count);
